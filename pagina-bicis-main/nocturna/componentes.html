@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kit de componentes - Rueda Nocturna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="font-cuerpo bg-crema text-azul-noche dark:bg-azul-noche dark:text-white">
+  <main class="max-w-3xl mx-auto space-y-12 px-4 py-12 sm:px-6">
+    <header class="space-y-3">
+      <p class="text-sm font-semibold uppercase tracking-widest text-verde-ruta dark:text-amarillo-farol">Rueda Nocturna</p>
+      <h1 class="font-titulos text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl text-azul-noche dark:text-white">Kit de componentes</h1>
+      <p class="text-base leading-relaxed text-azul-noche/80 dark:text-white/80">Botones, card, alertas y campos de formulario, todos con las mismas reglas de radios, espaciado y colores.</p>
+      <a href="index.html" class="btn-contorno">Volver a la campaña</a>
+    </header>
+
+    <section class="space-y-6" aria-labelledby="botones">
+      <h2 id="botones" class="font-titulos text-2xl font-bold tracking-tight text-azul-noche dark:text-white sm:text-3xl">Botones</h2>
+      <div class="flex flex-wrap gap-3">
+        <a href="#botones" class="btn-primario">Principal</a>
+        <a href="#botones" class="btn-secundario">Secundario</a>
+        <a href="#botones" class="btn-contorno">Contorno</a>
+      </div>
+    </section>
+
+    <section class="space-y-6" aria-labelledby="card">
+      <h2 id="card" class="font-titulos text-2xl font-bold tracking-tight text-azul-noche dark:text-white sm:text-3xl">Card</h2>
+      <div class="max-w-md">
+        <article class="overflow-hidden rounded-xl border border-azul-noche/15 bg-white shadow-md transition hover:border-verde-ruta hover:shadow-xl dark:border-white/15 dark:bg-white/5 dark:hover:border-amarillo-farol">
+          <img class="object-cover h-48 w-full" src="https://picsum.photos/seed/nocturna-centro/800/500" alt="Ciclistas pedaleando de noche por el centro iluminado de Medellín" loading="lazy">
+          <div class="space-y-4 p-5">
+            <span class="inline-block px-3 py-1 rounded-full border text-xs font-semibold uppercase tracking-wide border-verde-ruta bg-verde-ruta text-white">Nivel fácil</span>
+            <h3 class="font-titulos text-xl font-bold text-azul-noche dark:text-white">Luces del Centro</h3>
+            <dl class="space-y-2">
+            <div class="flex items-baseline justify-between gap-4">
+              <dt class="text-xs uppercase tracking-wide text-azul-noche/75 dark:text-white/75">Distancia</dt>
+              <dd class="text-sm font-semibold text-azul-noche dark:text-white">10 km</dd>
+            </div>
+            <div class="flex items-baseline justify-between gap-4">
+              <dt class="text-xs uppercase tracking-wide text-azul-noche/75 dark:text-white/75">Duración</dt>
+              <dd class="text-sm font-semibold text-azul-noche dark:text-white">2 h</dd>
+            </div>
+            <div class="flex items-baseline justify-between gap-4">
+              <dt class="text-xs uppercase tracking-wide text-azul-noche/75 dark:text-white/75">Punto de encuentro</dt>
+              <dd class="text-sm font-semibold text-azul-noche dark:text-white">Sede Rueda Libre</dd>
+            </div>
+            </dl>
+            <p class="font-titulos text-3xl font-extrabold text-verde-ruta dark:text-amarillo-farol">$55.000</p>
+            <a href="#inscripcion" class="btn-primario w-full">Inscríbete</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="space-y-6" aria-labelledby="alertas">
+      <h2 id="alertas" class="font-titulos text-2xl font-bold tracking-tight text-azul-noche dark:text-white sm:text-3xl">Alertas</h2>
+      <div class="space-y-4">
+        <div class="space-y-1 p-5 rounded-lg border-l-4 text-azul-noche border-azul-noche bg-azul-noche/10 dark:text-white dark:border-white dark:bg-white/10">
+          <h3 class="font-titulos text-base font-bold">Información</h3>
+          <p class="text-sm leading-relaxed">Las salidas de Rueda Nocturna son de jueves a sábado.</p>
+        </div>
+        <div role="status" class="space-y-1 p-5 rounded-lg border-l-4 text-azul-noche border-verde-ruta bg-verde-ruta/10 dark:text-white dark:bg-verde-ruta/25">
+          <h3 class="font-titulos text-base font-bold">Inscripción exitosa</h3>
+          <p class="text-sm leading-relaxed">Tu cupo quedó reservado. Te enviaremos los detalles por correo.</p>
+        </div>
+        <div class="space-y-1 p-5 rounded-lg border-l-4 text-azul-noche border-naranja-pedal bg-amarillo-farol/30 dark:text-white dark:border-amarillo-farol dark:bg-amarillo-farol/10">
+          <h3 class="font-titulos text-base font-bold">Advertencia</h3>
+          <p class="text-sm leading-relaxed">Los cupos son limitados; la ruta Luna en Las Palmas es de nivel difícil.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="space-y-6" aria-labelledby="campos">
+      <h2 id="campos" class="font-titulos text-2xl font-bold tracking-tight text-azul-noche dark:text-white sm:text-3xl">Campos de formulario</h2>
+      <div class="max-w-md space-y-6">
+        <div class="space-y-2">
+          <label for="correo" class="block text-sm font-semibold text-azul-noche dark:text-white">Correo electrónico</label>
+          <input id="correo" name="correo" type="email" autocomplete="email" placeholder="nombre@correo.com" aria-describedby="correo-ayuda" class="block w-full px-4 py-2.5 rounded-lg border text-sm border-azul-noche/50 bg-white text-azul-noche shadow-sm transition hover:border-azul-noche focus:border-verde-ruta focus:outline-none focus:ring-2 focus:ring-verde-ruta placeholder:text-azul-noche/70 dark:border-white/40 dark:bg-white/5 dark:text-white dark:placeholder:text-white/70 dark:hover:border-white dark:focus:border-amarillo-farol dark:focus:ring-amarillo-farol">
+          <p id="correo-ayuda" class="text-xs text-azul-noche/75 dark:text-white/75">Te enviaremos la confirmación a este correo.</p>
+        </div>
+        <div class="space-y-2">
+          <label for="celular" class="block text-sm font-semibold text-azul-noche dark:text-white">Celular</label>
+          <input id="celular" name="celular" type="tel" autocomplete="tel" inputmode="numeric" placeholder="300 123 4567" aria-describedby="celular-ayuda" class="block w-full px-4 py-2.5 rounded-lg border text-sm border-azul-noche/50 bg-white text-azul-noche shadow-sm transition hover:border-azul-noche focus:border-verde-ruta focus:outline-none focus:ring-2 focus:ring-verde-ruta placeholder:text-azul-noche/70 dark:border-white/40 dark:bg-white/5 dark:text-white dark:placeholder:text-white/70 dark:hover:border-white dark:focus:border-amarillo-farol dark:focus:ring-amarillo-farol">
+          <p id="celular-ayuda" class="text-xs text-azul-noche/75 dark:text-white/75">Solo números, 10 dígitos.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="px-4 py-8 border-t text-center text-sm border-azul-noche/10 text-azul-noche/80 dark:border-white/10 dark:text-white/80">
+    <p>&copy; 2026 Rueda Libre · Rueda Nocturna, Medellín</p>
+  </footer>
+</body>
+</html>

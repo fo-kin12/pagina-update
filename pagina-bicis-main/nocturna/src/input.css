@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* Tema de marca Rueda Libre + campaña Rueda Nocturna.
+   `--color-*: initial` borra la paleta genérica de Tailwind: solo existen los colores de marca. */
+@theme {
+  --color-*: initial;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-verde-ruta: #1E7A4F;
+  --color-verde-ruta-oscuro: #17613E;
+  --color-naranja-pedal: #F39A2B;
+  --color-azul-noche: #14213D;
+  --color-crema: #FAF6EF;
+  --color-amarillo-farol: #FFD166;
+
+  --font-titulos: "Montserrat", system-ui, sans-serif;
+  --font-cuerpo: "Open Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* Botones del kit: único elemento muy repetido, por eso es el único con @apply (3 clases). */
+@layer components {
+  .btn-primario {
+    @apply inline-flex items-center justify-center px-5 py-2.5 rounded-lg border-2 text-sm font-semibold border-verde-ruta bg-verde-ruta text-white shadow-md transition hover:border-verde-ruta-oscuro hover:bg-verde-ruta-oscuro focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-crema focus:ring-verde-ruta dark:focus:ring-offset-azul-noche dark:border-amarillo-farol dark:bg-amarillo-farol dark:text-azul-noche dark:hover:border-naranja-pedal dark:hover:bg-naranja-pedal dark:focus:ring-amarillo-farol;
+  }
+  .btn-secundario {
+    @apply inline-flex items-center justify-center px-5 py-2.5 rounded-lg border-2 text-sm font-semibold border-azul-noche bg-azul-noche text-white shadow-md transition hover:bg-azul-noche/85 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-crema focus:ring-azul-noche dark:focus:ring-offset-azul-noche dark:border-white/20 dark:bg-white/10 dark:hover:bg-white/20 dark:focus:ring-white;
+  }
+  .btn-contorno {
+    @apply inline-flex items-center justify-center px-5 py-2.5 rounded-lg border-2 text-sm font-semibold border-verde-ruta bg-transparent text-verde-ruta shadow-md transition hover:bg-verde-ruta hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-crema focus:ring-verde-ruta dark:focus:ring-offset-azul-noche dark:border-amarillo-farol dark:text-amarillo-farol dark:hover:bg-amarillo-farol dark:hover:text-azul-noche dark:focus:ring-amarillo-farol;
+  }
+}
